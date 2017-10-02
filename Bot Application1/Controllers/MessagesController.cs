@@ -10,7 +10,7 @@ namespace Bot_Application1
     [BotAuthentication]
     public class MessagesController : ApiController
     {
-        /// <summary>test
+        /// <summary>hello
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
         /// </summary>
