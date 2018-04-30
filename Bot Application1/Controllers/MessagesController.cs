@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using Bot_Application1.LUIS;
 
 namespace Bot_Application1
 {
@@ -40,6 +41,7 @@ namespace Bot_Application1
                 // Handle conversation state changes, like members being added and removed
                 // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
                 // Not available in all channels
+                return message.CreateReply("Hello");
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
             {
